@@ -1,6 +1,8 @@
 #ifndef __LUA_INC_H__
 #define __LUA_INC_H__
 
+#include "Bypass/bypass.h"
+
 extern "C"
 {
    #include "Lua/lua.h"
