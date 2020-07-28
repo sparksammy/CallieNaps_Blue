@@ -11,4 +11,7 @@ It uses a simple (semi-custom?) LUA VM to put code into ROBLOX's engine that all
 sudo apt install -y liblua5.1-0-dev
 
 ## Could this work in iOS?
-Maybe, if someone were to fork it, yes. It *is* heavily inspired by Calamari (The ROBLOX scripting tool, not the squid.), so maybe.
+Maybe, if someone were to fork it, yes. It *is* heavily inspired by Calamari (The ROBLOX scripting tool, not the squid.) and Custom Lua VM (but just without some of the the custom), so maybe.
+
+## What about Windows 10?
+If someone forked it, replaced the bypass code with this: https://github.com/sparksammy/ReturnCheck and compiled/linked it in Visual Studio, maybe.
