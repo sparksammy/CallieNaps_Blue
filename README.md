@@ -6,3 +6,6 @@ Note 2: I ***do not*** own the files in Lua/ and ***I didn't*** make the files i
 
 ## How does it work?
 It uses a simple (semi-custom?) LUA VM to put code into ROBLOX's engine that allows you to run custom code once the ELF is injected. (Shoutouts to cloristonezar for making Calamari for iOS under GPL, your work is in a seperate directory called "calamari-ios-mods")
+
+## Dependencies?
+sudo apt install -y liblua5.1-0-dev
