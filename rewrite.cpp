@@ -17,12 +17,14 @@ void fakeLClosure() {
 }
 
 int main() {
+    Bypass();
     fakeLClosure();
     lua_State *L;
     L = luaL_newstate();
     luaL_openlibs(L);
     luaL_dostring(L, "print('heck yea! it works!'); LClosure = true"); //Since LClosure's proto must return true or false, let's cut right to the chase.
     luaL_dofile(L, "calamari-ios-mods/modded-calamari-ios.lua"); luaL_dostring(L, "LClosure = true"); //Also: do LClosure every time you execute a script
+    Restore();
 }
 
 #endif // __LUA_INC_H__
