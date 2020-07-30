@@ -1,7 +1,7 @@
 # CallieNaps_Blue
 "The best way to hax is to think simple, yet outside the box at the same time." --Samuel Lord
 
-Note: Made for macOS, and made for building on Ubuntu WSL. ***This may or may not work in it's current state, or future states, as I don't have a Mac to test it with.***
+Note: Made for macOS, and made for building on Ubuntu WSL. ***This may or may not work in it's current state, or future states, as I don't have a Mac to test it with. (Heck, it might only work with Mojave 10.14.4 and below.)***
 Note 2: I ***do not*** own the files in Lua/ and ***I didn't*** make the files in calamari-ios-mods/ myself, hence the name.
 
 ## How does it work?
