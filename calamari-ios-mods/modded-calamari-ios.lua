@@ -1,5 +1,8 @@
 -- custom functions
 
+print("WARNING: CALAMARI iOS-BASED UI DEPRECATED!")
+print("USE NEW UI INSTEAD")
+
 function about()
     print("CallieNaps Blue v1.0")
     print("The open Calamari.")
