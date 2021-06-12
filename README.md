@@ -4,7 +4,7 @@
 Note: This now uses Mac compilation as of June 12th 2021 at 7pm central time.
 
 ## How does it work?
-It uses a simple (semi-custom?) LUA VM to put code into ROBLOX's engine that allows you to execute pre-built commands once the .SO is injected.
+It uses a simple (semi-custom?) LUA VM to put code into ROBLOX's engine that allows you to execute pre-built commands once the .dylib is injected.
 
 ## Dependencies?
 Hint: brew install lua@5.1
