@@ -20,8 +20,8 @@ end
 coroutine.resume(coroutine.create(closureLoop))
 
 function about()
-    print("CallieNaps Blue v1.0")
-    print("The open Calamari-M.")
+    print("CallieNaps New World v1.0")
+    print("The open Fluxus.")
 end
 
 closureLoop();
