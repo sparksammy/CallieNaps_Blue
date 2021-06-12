@@ -33,16 +33,16 @@ int loadstrFunc(lua_State *L) {
 
 int luaopen_loadstr(lua_State *L){
     Bypass();
-	lua_register(L,"loadstring",loadstrFunc);
+    lua_register(L,"loadstring",loadstrFunc);
     Restore();
-	return 0;
+    return 0;
 }
 
 int luaopen_fakeclosure(lua_State *L){
     Bypass();
-	lua_register(L,"fakeLClosure",fakeLClosureFunc);
+    lua_register(L,"fakeLClosure",fakeLClosureFunc);
     Restore();
-	return 0;
+    return 0;
 }
 
 int main() {
@@ -57,8 +57,8 @@ int main() {
     luaL_dofile(L, "customluafunc.lua");
     lua_setglobal(L, "loadstring");
     printf("Loading scripts...");
-    luaL_dostring(L, "print('heck yea! it works!'); LClosure = true"); //Since LClosure's proto must return true or false, let's cut right to the chase.
-    luaL_dofile(L, "my-gui/mygui.lua"); luaL_dostring(L, "LClosure = true"); //Also: do LClosure every time you execute a script
+    luaL_dostring(L, "print('heck yea! it works!'); fakeLClosure();"); //Update to function
+    luaL_dofile(L, "my-gui/mygui.lua"); luaL_dostring(L, "fakeLClosure();"); //Also: do LClosure every time.
     Restore();
 }
 
