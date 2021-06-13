@@ -3,11 +3,14 @@
 
 #include "Bypass/bypass.h"
 #include "Lua/LuaCompiler.h"
+#include <iostream>
+#include <string>
 extern "C"
 {
    #include "Lua/lua.h"
    #include "Lua/lauxlib.h"
    #include "Lua/lualib.h"
+   #include <stdio.h>
 }
 
 using namespace std;
@@ -56,9 +59,10 @@ int main() {
     luaopen_fakeclosure(L);
     luaL_dofile(L, "customluafunc.lua");
     lua_setglobal(L, "loadstring");
-    printf("Loading scripts...");
-    luaL_dostring(L, "print('heck yea! it works!'); fakeLClosure();"); //Update to function
-    luaL_dofile(L, "my-gui/mygui.lua"); luaL_dostring(L, "fakeLClosure();"); //Also: do LClosure every time.
+    std::string script;
+    char scriptz[255999996];
+    gets(scriptz);
+    luaL_dostring(L, scriptz);
     Restore();
 }
 
