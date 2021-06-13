@@ -1,10 +1,10 @@
-# CallieNaps New World
+# CallieNaps New World (AKA CallieNaps Blue)
 "The best way to hax is to think simple, yet outside the box at the same time, but use the right tools." --Samuel Lord, 2021
 
 Note: This now uses Mac compilation as of June 12th 2021 at 7pm central time. Also, this is MY project, and so far, has 0 affiliation with Jellyfish. Enjoy, and feel free to contribute as long as you follow the SparksammyCOC as well as the LICENSE.
 
 ## How does it work?
-It uses a simple (semi-custom?) LUA VM to put code into ROBLOX's engine that allows you to execute pre-built commands once the .dylib is injected. Please note this mostly 
+It uses a simple (semi-custom?) LUA VM to put code into ROBLOX's engine that allows you to execute pre-built commands once the .dylib is injected. Please note this mostly a prealpha-stage quality software.
 
 ## Dependencies?
 Hint: brew install lua@5.1
