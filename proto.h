@@ -42,8 +42,14 @@ int number = 0;
 #define LUA_TUSERDATA 8
 #define LUA_TPROTO 9
 #define LUA_TUPVALUE 10
-#define LUA_TSTATE 164;
-#define LUA_STATE 164;
+
+static void* loadNewState(lua_State *L) {
+    void* lPtrCast = (lua_State*) L;
+    int* lPtr = reinterpret_cast<int*>(lPtrCast);
+    lPtr += 164;
+    void* newL = reinterpret_cast<void*>(lPtr);
+    return newL;
+}
 
 static void loadUI(lua_State *L) {
     luaL_openlibs(L);
