@@ -20,5 +20,7 @@ Just in case ROBLOX EVER DOES obtain a port of VMProtect to Mac (which means VMP
 
 ## Credits
 **Sparksammy** - Creating the hack, interface, as well as converting Valcrax's bypass to (hopefully compatible) Mac code.
+
 **Valcrax** - Did most of the work creating the bypass
+
 **Marie** - Releasing the Calamari source code to give me inspiration...
