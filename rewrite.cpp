@@ -1,16 +1,31 @@
 #ifndef __LUA_INC_H__
 #define __LUA_INC_H__
 
+#pragma region Roblox Lua Types
+#define R_LUA_TNIL 0
+#define R_LUA_TLIGHTUSERDATA 1
+#define R_LUA_TNUMBER 2
+#define R_LUA_TBOOLEAN 3
+#define R_LUA_TSTRING 4
+#define R_LUA_TTHREAD 5
+#define R_LUA_TFUNCTION 6
+#define R_LUA_TTABLE 7
+#define R_LUA_TUSERDATA 8
+#define R_LUA_TPROTO 9
+#define R_LUA_TUPVALUE 10
+#pragma endregion
+
 #include "Bypass/bypass.h"
-#include "Lua/LuaCompiler.h"
 #include <iostream>
 #include <string>
+#include <fstream>
 extern "C"
 {
    #include "Lua/lua.h"
    #include "Lua/lauxlib.h"
    #include "Lua/lualib.h"
    #include <stdio.h>
+   #include <unistd.h>
 }
 
 using namespace std;
@@ -58,11 +73,7 @@ int main() {
     luaopen_loadstr(L);
     luaopen_fakeclosure(L);
     luaL_dofile(L, "customluafunc.lua");
-    lua_setglobal(L, "loadstring");
-    std::string script;
-    char scriptz[255999996];
-    gets(scriptz);
-    luaL_dostring(L, scriptz);
+    luaL_dofile(L, "gui.lua");
     Restore();
 }
 
