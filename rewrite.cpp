@@ -1,29 +1,13 @@
 #ifndef __LUA_INC_H__
 #define __LUA_INC_H__
 
-#pragma region Roblox Lua Types
-#define R_LUA_TNIL 0
-#define R_LUA_TLIGHTUSERDATA 1
-#define R_LUA_TNUMBER 2
-#define R_LUA_TBOOLEAN 3
-#define R_LUA_TSTRING 4
-#define R_LUA_TTHREAD 5
-#define R_LUA_TFUNCTION 6
-#define R_LUA_TTABLE 7
-#define R_LUA_TUSERDATA 8
-#define R_LUA_TPROTO 9
-#define R_LUA_TUPVALUE 10
-#pragma endregion
-
 #include "Bypass/bypass.h"
 #include <iostream>
 #include <string>
 #include <fstream>
+#include "proto.h"
 extern "C"
 {
-   #include "Lua/lua.h"
-   #include "Lua/lauxlib.h"
-   #include "Lua/lualib.h"
    #include <stdio.h>
    #include <unistd.h>
 }
@@ -64,16 +48,18 @@ int luaopen_fakeclosure(lua_State *L){
 }
 
 int main() {
+    printf("bypassing...");
     Bypass();
-    printf("Opening LUA...");
+    printf("loading lua...");
     lua_State *L;
     L = luaL_newstate();
-    printf("Opening libs...");
-    luaL_openlibs(L);
+    printf("loaded lua, now loading loadstring...");
     luaopen_loadstr(L);
+    printf("loading fake closure function...");
     luaopen_fakeclosure(L);
-    luaL_dofile(L, "customluafunc.lua");
-    luaL_dofile(L, "gui.lua");
+    printf("loading custom functions and ui");
+    loadUI(L);
+    printf("restoring from bypass...");
     Restore();
 }
 
