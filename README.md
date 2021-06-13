@@ -9,7 +9,7 @@ Also note: WE DO NOT ENDORSE UNAUTHORIZED HACKING, INCLUDING HACKING GAMES TO GE
 It uses a simple (semi-custom?) LUA VM to put code into ROBLOX's engine that allows you to execute pre-built commands once the .dylib is injected. Please note this mostly a prealpha-stage quality software.
 
 ## Dependencies?
-Hint: brew install lua@5.1
+Hint: brew install lua@5.1 wxwidgets
 
 ## Could this work in iOS?
 Maybe, if someone were to fork it, yes. It *is* heavily inspired by Calamari (The ROBLOX scripting tool, not the squid.) and Custom Lua VM (but just without some of the the custom), so maybe.
