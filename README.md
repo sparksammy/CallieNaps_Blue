@@ -15,5 +15,10 @@ Maybe, if someone were to fork it, yes. It *is* heavily inspired by Calamari (Th
 ## What about Windows 10?
 If someone forked it, replaced the bypass code with this: https://github.com/sparksammy/ReturnCheck and compiled/linked it in Visual Studio as a DLL, maybe.
 
-## What's the point of the RetCheck/Bypass code?
+## What's the point of the RetCheck port/Bypass code?
 Just in case ROBLOX EVER DOES obtain a port of VMProtect to Mac (which means VMProtect creators could port it to Linux pretty easily but to my understanding that's why ROBLOX doesn't have a Linux port, besides lack of market share and other stuff.) I would be ready.
+
+## Credits
+**Sparksammy** - Creating the hack, interface, as well as converting Valcrax's bypass to (hopefully compatible) Mac code.
+**Valcrax** - Did most of the work creating the bypass
+**Marie** - Releasing the Calamari source code to give me inspiration...
