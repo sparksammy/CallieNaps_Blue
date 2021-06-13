@@ -3,6 +3,8 @@
 
 Note: This now uses Mac compilation as of June 12th 2021 at 7pm central time. Also, this is MY project, and so far, has 0 affiliation with Jellyfish. Enjoy, and feel free to contribute as long as you follow the SparksammyCOC as well as the LICENSE.
 
+Also note: WE DO NOT ENDORSE UNAUTHORIZED HACKING, INCLUDING HACKING GAMES TO GET AN ADVANTAGE. THIS TOOL IS SIMPLY FOR REVERSE ENGINEERING, DEBUGGING, EDUCATION, AND BUG HUNTING PURPOSES.
+
 ## How does it work?
 It uses a simple (semi-custom?) LUA VM to put code into ROBLOX's engine that allows you to execute pre-built commands once the .dylib is injected. Please note this mostly a prealpha-stage quality software.
 
