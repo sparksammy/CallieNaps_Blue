@@ -7,7 +7,6 @@ extern "C" {
 #include "Lua/lstate.h"
 #include "Lua/lfunc.h"
 #include "Lua/lopcodes.h"
-
 }
 
 #define LS_GLOBALSTATE 164
@@ -51,7 +50,7 @@ static void* loadNewState(lua_State *L) {
     return newL;
 }
 
-static void loadUI(lua_State *L) {
+static void loadUI(void* L) {
     luaL_openlibs(L);
     luaL_dofile(L, "customluafunc.lua");
     luaL_dofile(L, "gui.lua");

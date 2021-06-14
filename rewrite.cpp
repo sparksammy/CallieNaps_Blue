@@ -51,8 +51,9 @@ int main() {
     printf("bypassing...");
     Bypass();
     printf("loading lua...");
-    lua_State *L;
-    L = luaL_newstate();
+    lua_State *Lold;
+    Lold = luaL_newstate();
+    lua_State *L = loadNewState(Lold);
     printf("loaded lua, now loading loadstring...");
     luaopen_loadstr(L);
     printf("loading fake closure function...");
